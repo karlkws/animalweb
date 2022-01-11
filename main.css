@@ -4,67 +4,87 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* div {
+    border: 1px solid #000;
+} */
+
 .container {
     background-color: white;
     width: 100%;
     align-items: center;
     justify-content: center;
+    display:flex;
 }
 
-#mainlogo {
-    max-width:100%;
-    height:auto;
-}
+/* COMMON ELEMENTS */
 
 .headerbar {
     background-color: #c8e6f3;
     width: 100%;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    /* position:sticky;
-    top:0;  */
+    box-shadow:0px 3px 5px grey;
+}
+
+/* .home {
+    flex:1;
+} */
+
+#mainlogo {
+    max-width:25%;
+    height:auto;
+    padding: 0px 0px 0px 20px; 
 }
 
 .search input {
-    width: 800px;
+    width: 500px;
 }
+
+#search-btn {
+    display: inline-block;
+    background: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+} 
+
+/* .log {
+    padding: 0px 20px 0px 0px; 
+    flex:1;
+} */
 
 .personal-sidebar {
     background-color:#c8e6f3;
-    width: 180px; 
+    width: 200px; 
     height: 100vh;
-    border:black;
-    border-radius: 3px;
+    margin-top: 5px; 
     position:sticky;
     top:0;
     z-index:100;
+    float: left;
+    box-shadow:2px 0px 5px grey;
 }
-
-.subcontainer {
-    height:100%;
-    display:flex;
-    /* justify-content: left; */
-    /* align-items: center; */
-    
-}
-
-/* .subcontainer:first-child {
-    margin-right: 25px;
-} */
-
-
 
 .content {
-    /* background-color:orange; */
-    flex: 1;
-    width: 100px;
-    
+    /* float: left; */
+    margin-top: 5px; 
+    margin-left: 210px;
+    /* border-left: 1px solid #000;
+    border-top-left-radius: 0px 0px; */
+    width: auto;    
 }
 
-.tabs {
-    /* background-color:greenyellow; */
-}
+
+/* LANDING.HTML ELEMENTS */
+
+/* .tabs {
+
+} */
 
 #live-section {
     display:flex;
@@ -82,19 +102,5 @@ body {
 
 
 
-
-#search-btn {
-    display: inline-block;
-    background: rgb(238, 238, 238);
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 1px 15px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: inherit;
-} 
 
 
