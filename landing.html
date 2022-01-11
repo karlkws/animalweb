@@ -15,10 +15,29 @@
         <div class='home'><h1><a href=''>Animal Website Title</a></h1></div>
         
         <div class='search'>
-            <input class='searchbar' type='text'>
-            <button type='button' id='search-btn'>Search</button>
-            <button type='button' id='search-btn'>Filter</button>
-        </div>
+            <input type='text' class='searchbar' id='searchInput' placeholder="Search for videos">
+			
+			</div>
+			
+			<form>
+			
+<div class="filterSearch"> 
+ <label for="cars">Filter:</label>
+  <select name="category" id="category">
+    <optgroup label="Mammals">
+      <option value="cats">Cats</option>
+      <option value="dogs">Dogs</option>
+    </optgroup>
+    <optgroup label="reptiles">
+      <option value="crocodiles">Crocodiles</option>
+      <option value="turtles">Turtles</option>
+    </optgroup>
+  </select>
+  <input type="submit" value="Search">
+  <br><br>
+</form>
+</div>
+	
 
         <div class='loginlogout'>
             <a href=''>Log out</a>
