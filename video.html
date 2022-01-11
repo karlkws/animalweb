@@ -6,47 +6,65 @@
     <title>Website Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <!-- Bootstrap CSS
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class='container'>
+
     <div class='headerbar'>
-        <div class='home'><h1><a href=''>Animal Website Title</a></h1></div>
+        <div class='home'>
+            <a href='landing.html'>
+                <img id='mainlogo' src='./image/animal_lovers.png'>
+            </a>
+        </div>
         
         <div class='search'>
-            <input class='searchbar' type='text'>
-            <button type='button' id='search-btn'>Search</button>
-            <button type='button' id='search-btn'>Filter</button>
+            <form action="landing.html">
+                <input type='input' class='searchbar' id='searchInput' placeholder="Search for videos...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="filterSearch">
+                <form action="landing.html">
+                    <label>Filter:</label>
+                    <select name="category" id="category">
+                        <optgroup label="Mammals">
+                        <option value="cats">Cats</option>
+                        <option value="dogs">Dogs</option>
+                        </optgroup>
+                        <optgroup label="Reptiles">
+                        <option value="crocodiles">Crocodiles</option>
+                        <option value="turtles">Turtles</option>
+                        </optgroup>
+                    </select>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
-
-        <div class='loginlogout'>
-            <a href=''>Log out</a>
+        
+        <div class='log'>
+            <a href=''>Log In</a>
         </div>
+        
     </div>
-	<br>
-	
-	<div class='subcontainer'>
     
-        <div class='personal-sidebar'>
-            <h3>Personal</h3>
-            <a href=''>Your Account</a><br>
-            Uploads<br>
-            Subscriptions<br>
-            History<br>
-            Saved<br>
-            Playlist<br>
-            Settings<br>
-            <a href='support.html'>Support these animals</a><br>
-        </div>
+    <div class='personal-sidebar' style="line-height:230%;">
+        <h3>Personal</h3>
+        <a href='landing.html'>Your Account</a><br>
+        <a href='landing.html'>Uploads</a><br>
+        <a href='landing.html'>Subscriptions</a><br>
+        <a href='landing.html'>History</a><br>
+        <a href='landing.html'>Saved</a><br>
+        <a href='landing.html'>Playlist</a><br>
+        <a href='landing.html'>Settings</a><br>
+        <a href='support.html'>Support these animals!</a><br>
+    </div>
 
 	<!-- add your content here below -->
-        <div class='content'>
-            <div class='tabs'>
-                <a href=''>Live</a> <a href=''>Recommended<a> <a href='trending.html'>Trending</a> <a href=''>Shorts</a>
-            </div>
-            <br>
-            <div class='video'>
+    <div class='content'>
+        <div class='tabs'>
+            <a href=''>Live</a> <a href=''>Recommended<a> <a href='trending.html'>Trending</a> <a href=''>Shorts</a>
+        </div>
+        <br>
+        <div class='video'>
 		      <div id='video-section'>
                     <div id='video-preview'>
                         <video width="950" height="600" poster="C:\Users\DESMOND\Desktop\AL1.png" controls>
@@ -71,24 +89,20 @@
 						<source src="C:\Users\DESMOND\Desktop\Cat Video.mp4" type="video/mp4">
 						</video>
                     </div>
-                    </div>
-					
-                </div>
-           <div id="respond"> 
- 
-  <h3>Leave a Comment</h3> 
-  <form action="commentLater.html" method="post" id="commentform"> 
-		<label for="comment" class="required"> 
-		Enter your message</label> 
-		<br> 
-			<textarea name="comment" id="comment" rows="2" style="overflow:auto;resize:none" cols="125" tabindex="1"></textarea> 
-		<br> 
-   
-			<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" /> 
-			<input name="submit" type="submit" value="Submit comment" /> 
- 
-	</form> 
- 
-</div> 		
+                </div>	
+        </div>
+        <div id="respond"> 
+                <h3>Leave a Comment</h3> 
+                <form action="commentLater.html" method="post" id="commentform"> 
+                        <label for="comment" class="required"> 
+                        Enter your message</label> 
+                        <br> 
+                            <textarea name="comment" id="comment" rows="2" style="overflow:auto;resize:none" cols="110" tabindex="1"></textarea> 
+                        <br> 
+                            <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" /> 
+                            <input name="submit" type="submit" value="Submit comment" /> 
+                </form> 
+        </div> 	
+    </div>
 </body>
 </html>

@@ -99,8 +99,6 @@ body {
     /* float: left; */
     margin-top: 5px; 
     margin-left: 245px;
-    /* border-left: 1px solid #000;
-    border-top-left-radius: 0px 0px; */
     width: auto;    
 }
 
@@ -116,20 +114,43 @@ footer {
 /* .tabs {
 } */
 
+.live {
+    height: 350px;
+}
+
+.recommend {
+    height: 350px;
+}
+
+.trending {
+    height: 350px;
+}
+
+.shorts {
+    height: 350px;
+}
 #live-section {
     display:flex;
 }
 
 #video-preview {
-    width: 1000px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 410px 410px 410px 410px;
+    
+}
+
+#viewcount {
+    font-size:xx-small;
 }
 
 #streamers {
     width:100px;
 	height:500px;
     flex: 1;
-    
 }
+
+
 #video-section {
     display:flex;
 }
@@ -175,7 +196,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #c8e6f;
+    /* background-color: #c8e6f; */
   }
   
   li a {
@@ -229,9 +250,9 @@ ul {
     background: #b6b0a9;
   }
 
-  .content {
+  /* .content {
     margin: 25px 30px 75px;
-  }
+  } */
 
   .supportdonate {
     display: block;
