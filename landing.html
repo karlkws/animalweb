@@ -5,127 +5,122 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Website Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     
 </head>
 <body>
-<div class='container'>
+
     
     <div class='headerbar'>
         <div class='home'>
             <img id='mainlogo' src='./image/animal_lovers.png'>
-            
         </div>
         
         <div class='search'>
-            <input type='text' class='searchbar' id='searchInput' placeholder="Search for videos">
-			</div>
-        <form>
-        <div class="filterSearch"> 
-        <label for="cars">Filter:</label>
-        <select name="category" id="category">
-            <optgroup label="Mammals">
-            <option value="cats">Cats</option>
-            <option value="dogs">Dogs</option>
-            </optgroup>
-            <optgroup label="reptiles">
-            <option value="crocodiles">Crocodiles</option>
-            <option value="turtles">Turtles</option>
-            </optgroup>
-        </select>
-        <input type="submit" value="Search">
-        <br><br>
-        </form>
-        </div>
+            <input type='input' class='searchbar' id='searchInput' placeholder="Search for videos...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <form>
+                <!-- <div class="filterSearch">  -->
+                <label>Filter:</label>
+                <select name="category" id="category">
+                    <optgroup label="Mammals">
+                    <option value="cats">Cats</option>
+                    <option value="dogs">Dogs</option>
+                    </optgroup>
+                    <optgroup label="Reptiles">
+                    <option value="crocodiles">Crocodiles</option>
+                    <option value="turtles">Turtles</option>
+                    </optgroup>
+                </select>
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+		</div>
 
-        <div class='loginlogout'>
-            <a href=''>Log out</a>
+        <div class='log'>
+            <a href=''>Log In</a>
         </div>
     </div>
     
+    <div class='personal-sidebar'>
+        <h3>Personal</h3>
+        <a href=''>Your Account</a><br>
+        Uploads<br>
+        Subscriptions<br>
+        History<br>
+        Saved<br>
+        Playlist<br>
+        Settings<br>
+        <a href='support.html'>Support these animals</a><br>
+    </div>
     
-    <div class='subcontainer'>
-    
-        <div class='personal-sidebar'>
-            <h3>Personal</h3>
-            <a href=''>Your Account</a><br>
-            Uploads<br>
-            Subscriptions<br>
-            History<br>
-            Saved<br>
-            Playlist<br>
-            Settings<br>
-            <a href='support.html'>Support these animals</a><br>
+    <div class='content'>
+        <div class='tabs'>
+            <a href=''>Live</a> <a href=''>Recommended<a> <a href='trending.html'>Trending</a> <a href=''>Shorts</a>
         </div>
-
-        <!-- add your content here below -->
-        <div class='content'>
-            <div class='tabs'>
-                <a href=''>Live</a> <a href=''>Recommended<a> <a href='trending.html'>Trending</a> <a href=''>Shorts</a>
-            </div>
-            <br>
-            <div class='live'>
-                <div id='live-header'><h3>Live now</h3></div>
-                <div id='live-section'>
-                    <div id='video-preview'>
-                        Thumbnail 1<br>
-                        <a href=''>Video Title 1</a><br>
-                        Thumbnail 2<br>
-                        <a href=''>Video Title 2</a>
-                    </div>
-                    <div id='streamers'>
-                        Streamers:<br>
-                        <a href=''>A</a><br>
-                        <a href=''>B</a><br>
-                        <a href=''>C</a><br>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class='recommend'>
-                <h3>Recommended</h3>
-                <div class='video-preview'>
+        <br>
+        <div class='live'>
+            <div id='live-header'><h3>Live now</h3></div>
+            <div id='live-section'>
+                <div id='video-preview'>
                     Thumbnail 1<br>
                     <a href=''>Video Title 1</a><br>
                     Thumbnail 2<br>
                     <a href=''>Video Title 2</a>
                 </div>
-            </div>
-            <br>
-            <div class='trending'>
-                <a href='trending.html'>Trending</a>
-                <div class='video-preview'>
-                    Thumbnail 1<br>
-                    <a href=''>Video Title 1</a><br>
-                    Thumbnail 2<br>
-                    <a href=''>Video Title 2</a>
+                <div id='streamers'>
+                    Streamers:<br>
+                    <a href=''>A</a><br>
+                    <a href=''>B</a><br>
+                    <a href=''>C</a><br>
                 </div>
             </div>
-            <br>
-            
-            <div class='shorts'>
-                <h3>#Shorts</h3>
-                <div class='video-preview'>
-                    Thumbnail 1<br>
-                    <a href=''>Shorts Title 1</a><br>
-                    Thumbnail 2<br>
-                    <a href=''>Shorts Title 2</a>
-                </div>
+        </div>
+        <br>
+        <div class='recommend'>
+            <h3>Recommended</h3>
+            <div class='video-preview'>
+                Thumbnail 1<br>
+                <a href=''>Video Title 1</a><br>
+                Thumbnail 2<br>
+                <a href=''>Video Title 2</a>
             </div>
-            <div class='support'>
-                <div id='support-title'>
-                    <h3>Support these animals!</h3>
-                </div>
-                <div id='support-misc'>
-                    Animal charity org<br>
-                    Short Desc<br>
-                    <a href=''>Donate</a>
-                </div>
+        </div>
+        <br>
+        <div class='trending'>
+            <a href='trending.html'>Trending</a>
+            <div class='video-preview'>
+                Thumbnail 1<br>
+                <a href=''>Video Title 1</a><br>
+                Thumbnail 2<br>
+                <a href=''>Video Title 2</a>
             </div>
-            
-        </div>  
-    </div>
-</div>
+        </div>
+        <br>
+        
+        <div class='shorts'>
+            <h3>#Shorts</h3>
+            <div class='video-preview'>
+                Thumbnail 1<br>
+                <a href=''>Shorts Title 1</a><br>
+                Thumbnail 2<br>
+                <a href=''>Shorts Title 2</a>
+            </div>
+        </div>
+        <div class='support'>
+            <div id='support-title'>
+                <h3>Support these animals!</h3>
+            </div>
+            <div id='support-misc'>
+                Animal charity org<br>
+                Short Desc<br>
+                <a href=''>Donate</a>
+            </div>
+        </div>      
+    </div>  
+
+
 
 </body>
 </html>
