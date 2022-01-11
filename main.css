@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    background-color: orange;
+    background-color: white;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -20,8 +20,55 @@ body {
 }
 
 .search input {
-    width: 900px;
+    width: 800px;
 }
+
+.subcontainer {
+    height:100%;
+    display:flex;
+    /* justify-content: left; */
+    /* align-items: center; */
+    
+}
+
+/* .subcontainer:first-child {
+    margin-right: 25px;
+} */
+
+.personal-sidebar {
+    background-color:red;
+    width: 180px; 
+    height: 100vh;
+    
+}
+
+.content {
+    background-color:orange;
+    flex: 1;
+    width: 100px;
+    
+}
+
+.tabs {
+    background-color:greenyellow;
+}
+
+#live-section {
+    display:flex;
+}
+
+#video-preview {
+    width: 600px;
+}
+
+#streamers {
+    width:100px;
+    flex: 1;
+    
+}
+
+
+
 
 #search-btn {
     display: inline-block;
