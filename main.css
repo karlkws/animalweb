@@ -71,11 +71,21 @@ body {
 }
 
 #video-preview {
-    width: 600px;
+    width: 1000px;
 }
 
 #streamers {
     width:100px;
+	height:500px;
+    flex: 1;
+    
+}
+#video-section {
+    display:flex;
+}
+#relatedvid {
+    width:100px;
+	height:500px;
     flex: 1;
     
 }
@@ -96,5 +106,3 @@ body {
     font-size: 15px;
     font-family: inherit;
 } 
-
-

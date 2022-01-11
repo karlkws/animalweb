@@ -26,47 +26,69 @@
     </div>
 	<br>
 	
-	<div class='personal-sidebar'>
-		<h3>Personal</h3>
-		Your Account<br>
-		Uploads<br>
-		Subscriptions<br>
-		History<br>
-		Saved<br>
-		Playlist<br>
-		Settings<br>
-    </div>
-	<br>
-	
-	<div class='video-preview'>
-		Thumbnail <br>
-		<div class='video_description'>
-			<h4> 
-				Video Title <br>
-				Channel name <br>
-			</h4> <br>
-		</div>
-		<div class='rating'>
-		Views
-		<button type='button' id='like'>Like</button>
-		<button type='button' id='dislike'>Dislike</button>
-		</div>
-	</div>
-	<br>
-	
-	<div class='comment'>
-		<h3> Comment <br> </h3>
-		<input class='commentbar' type='text'> <br>
-		Name <br>
-		Comment <br>
-	</div>
-	<br>
-	<div class='Videos-related'>
-		<h3> Videos Related </h3>
-		Thumbnail 1 <br>
-		<a href = ''>Video title 1</a> <br>
-		Thumbnail 2 <br>
-		<a href = ''>Video title 2 </a> <br>
-		
+	<div class='subcontainer'>
+    
+        <div class='personal-sidebar'>
+            <h3>Personal</h3>
+            <a href=''>Your Account</a><br>
+            Uploads<br>
+            Subscriptions<br>
+            History<br>
+            Saved<br>
+            Playlist<br>
+            Settings<br>
+            <a href='support.html'>Support these animals</a><br>
+        </div>
+
+	<!-- add your content here below -->
+        <div class='content'>
+            <div class='tabs'>
+                <a href=''>Live</a> <a href=''>Recommended<a> <a href='trending.html'>Trending</a> <a href=''>Shorts</a>
+            </div>
+            <br>
+            <div class='video'>
+		      <div id='video-section'>
+                    <div id='video-preview'>
+                        <video width="950" height="600" poster="C:\Users\DESMOND\Desktop\AL1.png" controls>
+						<source type="video/mp4" src="C:\Users\DESMOND\Desktop\Cat Video.mp4" >
+						</video>
+					</div>
+					<div id='relatedvid'>
+						<h3>Related Videos<h3><br>
+                        <video width="200" height="150" poster="C:\Users\DESMOND\Desktop\AL1.png" controls>
+						<source src="C:\Users\DESMOND\Desktop\Cat Video.mp4" type="video/mp4">
+						</video>
+						<br>
+						<video width="200" height="150" poster="C:\Users\DESMOND\Desktop\AL1.png" controls>
+						<source src="C:\Users\DESMOND\Desktop\Cat Video.mp4" type="video/mp4">
+						</video>
+						<br>
+						<video width="200" height="150" poster="C:\Users\DESMOND\Desktop\AL1.png" controls>
+						<source src="C:\Users\DESMOND\Desktop\Cat Video.mp4" type="video/mp4">
+						</video>
+						<br>
+						<video width="200" height="150" poster="C:\Users\DESMOND\Desktop\AL1.png" controls>
+						<source src="C:\Users\DESMOND\Desktop\Cat Video.mp4" type="video/mp4">
+						</video>
+                    </div>
+                    </div>
+					
+                </div>
+           <div id="respond"> 
+ 
+  <h3>Leave a Comment</h3> 
+  <form action="commentLater.html" method="post" id="commentform"> 
+		<label for="comment" class="required"> 
+		Enter your message</label> 
+		<br> 
+			<textarea name="comment" id="comment" rows="2" style="overflow:auto;resize:none" cols="125" tabindex="1"></textarea> 
+		<br> 
+   
+			<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" /> 
+			<input name="submit" type="submit" value="Submit comment" /> 
+ 
+	</form> 
+ 
+</div> 		
 </body>
 </html>
