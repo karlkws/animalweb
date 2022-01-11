@@ -130,6 +130,8 @@ footer {
     flex: 1;
     
 }
+
+/* VIDEO.HTML section */
 #video-section {
     display:flex;
 }
@@ -140,6 +142,37 @@ footer {
     
 }
 
+#video_details{
+	display: flex;
+}
+
+.video_description {
+	width: 40%;
+}
+
+.rating{
+	width: 20%;
+}
+
+
+
+#like{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC6f8dqPn5u6MlkRgI_Fwy2SFknRMEdEMsxQ&usqp=CAU) no-repeat;
+  background-size: 25px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: border: 1px solid #000000;
+}
+
+#dislike{
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDdJMQeMWyBOmTO0OmsymQamz_rP12HzR1xIVqzfbAljcwqO4egIsOYyI4lUXrpyYwXqo&usqp=CAU) no-repeat;
+  background-size: 25px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: border: 1px solid #000000;
+}
 
 /* SUPPORT.HTML ELEMENTS */
 
