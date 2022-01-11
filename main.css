@@ -8,13 +8,13 @@ body {
     border: 1px solid #000;
 } */
 
-.container {
+/* .container {
     background-color: white;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     display:flex;
-}
+} */
 
 /* COMMON ELEMENTS */
 
@@ -22,21 +22,44 @@ body {
     background-color: #c8e6f3;
     width: 100%;
     display:flex;
+    justify-content: stretch;
     box-shadow:0px 3px 5px grey;
 }
 
-/* .home {
-    flex:1;
-} */
+.home {
+    width:15%;
+    
+}
 
 #mainlogo {
-    max-width:25%;
+    max-width:100%;
     height:auto;
-    padding: 0px 0px 0px 20px; 
+    padding: 10px 0px 0px 0px; 
+    
+}
+
+.search {
+    
+    flex:1;
+    width:100%;
+    padding: 15px 0px 0px 0px; 
+    margin-left: 400px;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
 }
 
 .search input {
-    width: 500px;
+    width: 90%;
+}
+
+.filterSearch{
+    /* background-color: red; */
+    /* width: 20%; */
+    /* padding: 25px 0px 0px 0px;  */
+    /* justify-content: center;
+    align-items:center; */
+    text-align:center;
 }
 
 #search-btn {
@@ -53,14 +76,15 @@ body {
     font-family: inherit;
 } 
 
-/* .log {
-    padding: 0px 20px 0px 0px; 
+.log {
+    padding: 25px 25px 0px 0px; 
     flex:1;
-} */
+    text-align:right;
+}
 
 .personal-sidebar {
     background-color:#c8e6f3;
-    width: 200px; 
+    width: 230px; 
     height: 100vh;
     margin-top: 5px; 
     position:sticky;
@@ -68,22 +92,28 @@ body {
     z-index:100;
     float: left;
     box-shadow:2px 0px 5px grey;
+    padding: 0px 0px 0px 5px; 
 }
 
 .content {
     /* float: left; */
     margin-top: 5px; 
-    margin-left: 210px;
+    margin-left: 245px;
     /* border-left: 1px solid #000;
     border-top-left-radius: 0px 0px; */
     width: auto;    
 }
 
+footer {
+    margin-left: 245px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c8e6f3;
+    padding: 0px 0px 0px 5px; 
+}
 
 /* LANDING.HTML ELEMENTS */
 
 /* .tabs {
-
 } */
 
 #live-section {
