@@ -263,7 +263,7 @@ footer {
     display:flex;
 }
 #relatedvid {
-    width:200px;
+    width:200x;
 	height:500px;
     flex: 1;
     
@@ -280,8 +280,16 @@ footer {
 .rating{
 	width: 20%;
     margin-top:15px;
+	text-align: right;
 }
 
+.video_alignment{
+	display:flex;
+}
+
+.comment{
+	width=80%;
+}
 
 /* SUPPORT.HTML ELEMENTS */
 
