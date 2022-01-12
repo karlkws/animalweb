@@ -41,12 +41,14 @@ body {
 .search {
     
     flex:1;
+    flex-basis:15%;
     width:100%;
     padding: 15px 0px 0px 0px; 
-    margin-left: 400px;
+    margin-left: 20%;
     justify-content: center;
     align-items:center;
     text-align:center;
+    
 }
 
 .search input {
@@ -84,7 +86,7 @@ body {
 
 .personal-sidebar {
     background-color:#c8e6f3;
-    width: 230px; 
+    width: 13vw; 
     height: 100vh;
     margin-top: 5px; 
     position:sticky;
@@ -93,12 +95,15 @@ body {
     float: left;
     box-shadow:2px 0px 5px grey;
     padding: 0px 0px 0px 5px; 
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .content {
     /* float: left; */
     margin-top: 10px; 
-    margin-left: 255px;
+    margin-left: 14vw;
     width: auto;    
 }
 
@@ -123,28 +128,40 @@ footer {
 }
 
 .live {
-    height: 350px;
+    height: auto;
 }
 
 .recommend {
-    height: 350px;
+    height: auto;
 }
 
 .trending {
-    height: 350px;
+    height: auto;
 }
 
 .shorts {
-    height: 350px;
-}
-#live-section {
-    display:flex;
+    height: auto;
 }
 
+/* #live-section {
+    display:flex;
+} */
+
 #video-preview {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 410px 410px 410px 410px;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    
+    /* grid-template-columns: 410px 410px 410px 410px; */
+    
+}
+
+.videoitem {
+    flex:2;
+    /* text-align: center; */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
     
 }
 
@@ -153,9 +170,9 @@ footer {
 }
 
 #streamers {
-    width:100px;
-	height:500px;
-    flex: 1;
+    width:60%;
+	height:auto;
+    
 }
 
 
