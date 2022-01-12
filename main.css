@@ -264,7 +264,7 @@ footer {
 }
 #relatedvid {
     width:200x;
-	height:500px;
+	height:auto;
     flex: 1;
     
 }
