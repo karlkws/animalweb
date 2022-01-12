@@ -52,10 +52,29 @@ body {
 }
 
 .search input {
-    width: 90%;
+    width: 500px;
     font-size: 15px;
     color: black;
     padding: 5px;
+    border: 1px solid rgb(121, 114, 114);
+    float: left;
+    width: 50%;
+    background: #faf8f8;
+}
+form.searchForm button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background: #dbcbbd;
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.searchForm button:hover {
+  background: #b6b0a9;
 }
 
 .filterSearch{
