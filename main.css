@@ -53,6 +53,9 @@ body {
 
 .search input {
     width: 90%;
+    font-size: 15px;
+    color: black;
+    padding: 5px;
 }
 
 .filterSearch{
