@@ -52,19 +52,19 @@ body {
 }
 
 .search input {
-    width: 500px;
+    width: 600px;
     font-size: 15px;
     color: black;
     padding: 5px;
     border: 1px solid rgb(121, 114, 114);
     float: left;
-    width: 50%;
+    width: 60%;
     background: #faf8f8;
 }
 form.searchForm button {
   float: left;
   width: 10%;
-  padding: 10px;
+  padding: 4.5px;
   background: #dbcbbd;
   color: white;
   font-size: 15px;
