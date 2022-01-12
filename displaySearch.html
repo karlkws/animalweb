@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Animal Lovers</title>
+    <link rel="icon" href="image/animal_lovers_favicon.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+
+    <div class='headerbar'>
+        <div class='home'>
+            <a href='landing.html'>
+                <img id='mainlogo' src='./image/animal_lovers.png'>
+            </a>
+        </div>
+        
+        <div class='search'>
+            <form action="displaySearch.html" method="GET">
+                <input type='input' class='searchbar' id='searchInput' onkeyup="searchFunction()" placeholder="Search for videos...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="filterSearch">
+                <form action="landing.html">
+                    <label>Filter:</label>
+                    <select name="category" id="category">
+                        <optgroup label="Mammals">
+                        <option value="cats">Cats</option>
+                        <option value="dogs">Dogs</option>
+                        </optgroup>
+                        <optgroup label="Reptiles">
+                        <option value="crocodiles">Crocodiles</option>
+                        <option value="turtles">Turtles</option>
+                        </optgroup>
+                    </select>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class='log'>
+            <a href=''>Log In</a>
+        </div>
+        
+    </div>
+    
+    <div class='personal-sidebar'>
+        <ul>
+            <li><a href="landing.html"><h3>Home</h3></a></li>
+            <li><a href=''>Your Account</a><br></li>
+            <li><a href=''>Uploads</a><br></li>
+            <li><a href=''>Subscriptions</a><br></li>
+            <li><a href=''>History</a><br></li>
+            <li><a href=''>Saved</a><br></li>
+            <li><a href=''>Playlist</a><br></li>
+            <li><a href=''>Settings</a><br></li>
+            <li><a href='support.html'>Support these animals</a><br></li>
+        </ul>
+    </div>
+	
+	<div class='content'>
+	<h1> Search Results </h1>
+		<div class='videoitem'>
+                    <img src='image/landing/recommended_2.PNG' width='400' height='200'><br>
+                    <a href='video.html'>Shiba Inu from Puppy to Adult (8 weeks to 1 year)</a>
+                    <p id='viewcount'>
+                        Duration: 11:15<br>
+                        Views: 782,941
+                    </p>
+        </div>
+		<div class='videoitem'>
+                    <img src='image/landing/shorts_3.jpg' width='400' height='200'><br>
+                    <a href='image/video/Cat Video.mp4'>
+                        Maltese puppy Falls Asleep While getting Haircut</a>
+                    <p id='viewcount'>
+                        Duration: 0:40<br>
+                        Views: 98,240
+                    </p>
+        <div>
+		<div class='videoitem'>
+                        <img src='image/landing/live_3.gif' width='400' height='200'><br>
+                        <a href='video.html'>Just a couple of good boys</a>
+                        <p id='viewcount'>Live viewers: 6831</p>
+        </div>
+		
+	</body>
+<!-- <footer id='footer'>
+    <div class='support'>
+        <div id='support-title'>
+            <h3>Support these animals!</h3>
+        </div>
+        <div id='support-misc'>
+            Animal charity org<br>
+            Short Desc<br>
+            <a href=''>Donate</a>
+        </div>
+    </div> 
+</footer> -->
+</html>
