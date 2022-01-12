@@ -68,7 +68,7 @@ form.searchForm button {
   background: #dbcbbd;
   color: white;
   font-size: 15px;
-  border: 1px solid grey;
+  border: 1px solid rgb(121, 114, 114);
   border-left: none;
   cursor: pointer;
 }
