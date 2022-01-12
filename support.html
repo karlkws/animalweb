@@ -68,49 +68,51 @@
             <h1>Support These Animals</h1>  
             <img src="image/support/donate.jpg" alt="Donation image" class='supportdonate'>
             <p>Choose from almost a million charities, schools, and other nonprofits. We will reach out to the organization you select to ensure it is ready to accept donations from us for you.</p>
-            <br></div>  
-            <div class='search-charity'>
-                <input class='searchcharitybar' type='text' placeholder="Find your preferred charitable organization">
-                <button type='button' id='scb-btn'>Search</button>
-            </div>  
             <br>
-            <div class = 'charity-list'>
-                <div class = "charityitem">
+			</div> 
+			
+            <div class='search-charity'>
+                <input id="myCharitySearch" onkeyup="myFunction()" type='text' placeholder="Find your preferred charitable organization">
+            </div>
+			<br>		
+				
+		     <div class = 'charity-list' id="charity-container">
+                <div class = "charityitem" id = "Lifelong Animal Protection">
                     <img src="Image/support/LAP.jpg" alt="LAP" width="300" height="300">
                     <h3>Lifelong Animal Protection</h3>
                     <p>Works to help animals in Hong Kong and to bring about the conditions whereby every animal has a good home.</p>
                     <button type='button' id='select-btn'><strong><em>SELECT</em></strong></button>
                 </div>
                               
-                <div class = "charityitem">
+                <div class = "charityitem" id="Best Friends Animal Society">
                     <img src="image/support/BFAS.png" alt="BFAS" width="300" height="300">
                     <h3>Best Friends Animal Society</h3>
                     <p>Works to creating a sanctuary for homeless and special-needs animals.</p>
                     <button type='button' id='select-btn'><strong><em>SELECT</em></strong></button>
                 </div>
                 
-                <div class = "charityitem">
+                <div class = "charityitem" id = "Save The Elephant">
                     <img src="image/support/ste-ecf-logo1.jpg" alt="STE" width="300" height="300">
                     <h3>Save The Elephant</h3>
                     <p>Works to sustain elephant populations and preserve the habitats in which elephants are found, while at the same time fostering a heightened appreciation and visibility for elephants and their often fragile existence.</p>
                     <button type='button' id='select-btn'><strong><em>SELECT</em></strong></button>
                 </div>
                 
-                <div class = "charityitem">
+                <div class = "charityitem" id="World Wildlife Fund">
                     <img src="image/support/WWF.jpg" alt="WWF" width="300" height="300">
                     <h3>World Wildlife Fund</h3>
                     <p>Works to stop the degradation of the planet's natural environment and to build a future in which humans live in harmony with nature.</p>
                     <button type='button' id='select-btn'><strong><em>SELECT</em></strong></button>
                 </div>
 
-                <div class = "charityitem">
+                <div class = "charityitem" id ="Society for the Prevention of Cruelty to Animals">
                     <img src="image/support/SPCA.png" alt="SPCA" width="300" height="300">
                     <h3>Society for the Prevention of Cruelty to Animals</h3>
                     <p>Works to to curb cruelty to animals, to protect their health and welfare, to prevent cruelty and through education, to inspire in the community a deep respect for life so that all living creatures may live together in harmony.</p>
                     <button type='button' id='select-btn'><strong><em>SELECT</em></strong></button>
                 </div>
 
-                <div class = "charityitem">
+                <div class = "charityitem" id="Farm Sanctuary">
                     <img src="image/support/FS.png" alt="FS" width="300" height="300">
                     <h3>Farm Sanctuary</h3>
                     <p>Works to end animal agriculture and foster just and compassionate vegan living.</p>
@@ -118,7 +120,20 @@
                 </div>
             </div>
         </div>
-    
+		<script>
+			function myFunction() {
+			var input = document.getElementById("myCharitySearch");
+			var filter = input.value.toLowerCase();
+			var nodes = document.getElementsByClassName('charityitem');
 
+				for (i = 0; i < nodes.length; i++) {
+				if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+			</script>
 </body>
 </html>
