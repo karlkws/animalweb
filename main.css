@@ -111,8 +111,16 @@ footer {
 
 /* LANDING.HTML ELEMENTS */
 
-/* .tabs {
-} */
+#ultabs {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display: flex
+}
+
+.litabs{
+	display: inline;
+}
 
 .live {
     height: 350px;
