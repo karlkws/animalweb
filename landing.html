@@ -74,7 +74,7 @@
         </div>
         
         <div class='live'>
-            <a href=''><h3>Live Now</h3></a>
+            <div id='sectionheaders'><a href=''>Live Now</a></div>
                 <div id='video-preview'>
                     <div class='videoitem'>
                         <img src='image/landing/live_1.gif' width='400' height='200'><Br>
@@ -102,58 +102,158 @@
                 </div>
         </div>
         <br>
-        <div id='streamers'>
-            <h3>Top streamers:</h3>
-            <table>
-                <th>Name</th>
-                <th>Views</th>
-                <th>Followers</th>
-                <tr>
-                    <td><a href=''>Peppa Piggy</a></td>
-                    <td>583,342</td>
-                    <td>2,402,145</td>
-                </tr>
-                <tr>
-                    <td><a href=''>iPanda</a></td>
-		    <td>578,980</td>
-                    <td>2,372,181</td>
-                </tr>
-                <tr>
-                    <td><a href=''>I_am_puma</a></td>
-		    <td>578,932</td>
-                    <td>2,359,348</td>
-                </tr>
-                <tr>
-                    <td><a href=''>Haribo the Shiba</a></td>
-		    <td>573,378</td>
-                    <td>2,352,203</td>
-                </tr>
-                <tr>
-                    <td><a href=''>Croco Sashimi</a></td>
-		    <td>571,299</td>
-                    <td>2,322,189</td>
-                </tr>
-                <tr>
-                    <td><a href=''>Fumeancats</a></td>
-		    <td>572,980</td>
-                    <td>2,312,239</td>
-                </tr>
-                <tr>
-                    <td><a href=''>許伯&簡芝—倉鼠人</a></td>
-		    <td>569,967</td>
-                    <td>2,289,220</td>
-                </tr>
-                <tr>
-                    <td><a href=''>SoybeanMilk Cat</a></td>
-		    <td>569,877</td>
-                    <td>2,276,890</td>
-                </tr>
-            </table>
-            
+
+        <div class='streamers'>
+            <div id='sectionheaders'>Top streamers:</div>
+            <div class='streamerTableFilter'>
+                <button class="streamerbtn" onClick="toggleElements('.weektable','.table')">This Week</button>
+                <button class="streamerbtn" onClick="toggleElements('.monthtable','.table')">This Month</button>
+                <button class="streamerbtn" onClick="toggleElements('.alltimetable','.table')">All Time</button>
+            </div>
+                <table class='streamerstable'>
+                    <thead>
+                        <th>Name</th>
+                        <th>Views</th>
+                        <th>Total Followers</th>
+                    </thead>
+                    <tbody class="table weektable">
+                        <tr>
+                            <td><a href=''>Peppa Piggy</a></td>
+                            <td>583,342</td>
+                            <td>2,402,145</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>iPanda</a></td>
+                            <td>578,980</td>
+                            <td>3,372,181</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>I_am_puma</a></td>
+                            <td>570,124</td>
+                            <td>1,359,348</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>Haribo the Shiba</a></td>
+                            <td>523,378</td>
+                            <td>3,352,203</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>Croco Sashimi</a></td>
+                            <td>456,299</td>
+                            <td>2,322,189</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>Milkyyy</a></td>
+                            <td>371,299</td>
+                            <td>1,124,236</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>TomAndMi</a></td>
+                            <td>271,299</td>
+                            <td>942,189</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>WoofCafe</a></td>
+                            <td>241,983</td>
+                            <td>1,032,379</td>
+                        </tr>
+                    </tbody>
+                    <tbody class="table monthtable" style="display: none">
+                        <tr>
+                            <td><a href=''>Fumeancats</a></td>
+                            <td>1,172,980</td>
+                            <td>4,712,239</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>許伯&簡芝—倉鼠人</a></td>
+                            <td>969,967</td>
+                            <td>4,289,220</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>SoybeanMilk Cat</a></td>
+                            <td>869,877</td>
+                            <td>3,276,890</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>JangoDoggo</a></td>
+                            <td>714,236</td>
+                            <td>2,136,348</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>KeirasPup</a></td>
+                            <td>614,236</td>
+                            <td>1,936,348</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>Peppa Piggy</a></td>
+                            <td>583,342</td>
+                            <td>2,402,145</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>iPanda</a></td>
+                            <td>578,980</td>
+                            <td>3,372,181</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>I_am_puma</a></td>
+                            <td>570,124</td>
+                            <td>1,359,348</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>Haribo the Shiba</a></td>
+                            <td>523,378</td>
+                            <td>3,352,203</td>
+                        </tr>
+                    </tbody>
+                    <tbody class="table alltimetable" style="display: none">
+                        <tr>
+                            <td><a href=''>Fumeancats</a></td>
+                            <td>12,172,980</td>
+                            <td>4,712,239</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>許伯&簡芝—倉鼠人</a></td>
+                            <td>9,969,967</td>
+                            <td>4,289,220</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>SoybeanMilk Cat</a></td>
+                            <td>8,869,877</td>
+                            <td>3,276,890</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>JangoDoggo</a></td>
+                            <td>8,714,236</td>
+                            <td>2,136,348</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>MayaTheBirdGirl</a></td>
+                            <td>7,264,736</td>
+                            <td>2,836,348</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>Haribo the Shiba</a></td>
+                            <td>7,123,378</td>
+                            <td>3,352,203</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>iPanda</a></td>
+                            <td>6,578,980</td>
+                            <td>3,372,181</td>
+                        </tr>
+                        <tr>
+                            <td><a href=''>Peppa Piggy</a></td>
+                            <td>5,583,342</td>
+                            <td>2,402,145</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
         </div>
         <br>
         <div class='recommend'>
-            <a href=''><h3>Recommended</h3></a>
+            <div id='sectionheaders'><a href=''>Recommended</a></div>
             <div id='video-preview'>
                 <div class='videoitem'>
                     <img src='image/landing/recommended_1.PNG' width='400' height='200'><Br>
@@ -190,11 +290,12 @@
                         Views: 12,414,395
                     </p>
                 </div>
+
             </div>
         </div>
         <br>
         <div class='trending'>
-            <a href='trending.html'><h3>Trending</h3></a>
+            <div id='sectionheaders'><a href='trending.html'>Trending</a></div>
             <div id='video-preview'>
                 <div class='videoitem'>
                     <img src='image/landing/trending_1.png' width='400' height='200'><Br>
@@ -236,7 +337,7 @@
         <br>
         
         <div class='shorts'>
-            <a href=''><h3>#Shorts</h3></a>
+            <div id='sectionheaders'><a href=''>#Shorts</a></div>
             <div id='video-preview'>
                 <div class='videoitem'>
                     <img src='image/landing/shorts_1.png' width='400' height='200'><Br>
@@ -282,16 +383,12 @@
     </div>  
     
 </body>
-<!-- <footer id='footer'>
-    <div class='support'>
-        <div id='support-title'>
-            <h3>Support these animals!</h3>
-        </div>
-        <div id='support-misc'>
-            Animal charity org<br>
-            Short Desc<br>
-            <a href=''>Donate</a>
-        </div>
-    </div> 
-</footer> -->
+
+<script>
+    function toggleElements(showElement, hideElements) {
+        document.querySelectorAll(hideElements).forEach(i => i.style.display = "none");
+        document.querySelector(showElement).style.display = "";
+    };
+</script>
+
 </html>
