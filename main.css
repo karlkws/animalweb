@@ -258,17 +258,26 @@ footer {
     transition-duration: 0.4s;
     cursor: pointer
 }
+
 #select-btn:hover {
-    background-color: wheat; 
+    background-color: #dbcbbd; 
     color: black;
     border: 2px solid #cfcd55;
 }
 
 .charity-list {
     display: inline-grid;
-    grid-template-columns: auto auto auto;
+    /*grid-template-columns: auto auto auto; #*/
+    /* grid-auto-rows: minmax(100px, auto); */
     background-color: white;
     padding: 10px;
+    grid-template-areas: 
+    "1 1 1" 
+    "2 2 2"
+    "3 3 3"
+    "4 4 4";
+    align-content: center;
+    
   }
   
 .charityitem {
@@ -277,8 +286,47 @@ footer {
     padding: 20px;
     font-size: 20px;
     text-align: match-parent;
+    display: flex;
+    position: relative
+    }
+
+/*newly add 12Jan 12:58pm */
+
+.charityimg {
+    grid-area: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.charityname {
+    grid-area: 2;    
+    display: flex;
+    color: #4e4a4a;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    height: 15%;
+}
+
+.charityinfo {
+    grid-area: 3;
+    display: flex;
+    text-align: justify;
+    height: max-content;
+    margin-bottom: 50px;
+    color: dimgray;
+}
+
+#select-btn {
+    grid-area: 4;
+    justify-items: center;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+
+/*personal sidebar*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -299,7 +347,9 @@ ul {
     background-color: #555;
     color: white;
   } 
+/*personal sidebar end*/
 
+/*support continue charity search*/
   .search-charity { 
     display: flex;
     justify-content: center;
@@ -336,6 +386,7 @@ ul {
   #scb-btn:hover{
     background: #b6b0a9;
   }
+/*support continue charity search end*/
 
   /* .content {
     margin: 25px 30px 75px;
