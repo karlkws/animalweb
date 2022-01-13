@@ -297,7 +297,7 @@ footer {
 }
 
 .rating{
-	width: 20%;
+	width: 50%;
     margin-top:15px;
 	text-align: right;
 }
@@ -307,7 +307,7 @@ footer {
 }
 
 .comment{
-	width:80%;
+	width=80%;
 }
 
 /* SUPPORT.HTML ELEMENTS */
