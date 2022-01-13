@@ -281,10 +281,20 @@ footer {
 #video-section {
     display:flex;
 }
+
+#video-preview2 {
+    width: 50vw;
+    display: flex;
+    flex-flow: wrap;
+}
+
+
 #relatedvid {
-    width:200x;
+    width:500px;
 	height:auto;
-    flex: 1;
+    flex: 2;
+    margin-left: 15vw;
+    
     
 }
 
